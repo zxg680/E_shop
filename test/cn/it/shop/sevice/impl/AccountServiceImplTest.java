@@ -21,7 +21,7 @@ public class AccountServiceImplTest {
 	
 	@Test
 	public void testSave() {
-		accountService.save(new Account("admin", "Сǿ", "admin"));
+		accountService.save(new Account("admin", "测试admin", "admin"));
 	}
 
 }

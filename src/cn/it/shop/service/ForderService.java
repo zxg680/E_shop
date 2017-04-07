@@ -5,8 +5,8 @@ import java.math.BigDecimal;
 import cn.it.shop.model.Forder;
 
 public interface ForderService extends BaseService<Forder> {
-	//¼ÆËã¹ºÎï×Ü¼Û¸ñ
+	//è®¡ç®—è´­ç‰©æ€»ä»·æ ¼
 	public BigDecimal cluTotal(Forder forder);
-	//¸ù¾İ¶©µ¥±àºÅ£¬¸üĞÂ¶©µ¥×´Ì¬
+	//æ ¹æ®è®¢å•ç¼–å·ï¼Œæ›´æ–°è®¢å•çŠ¶æ€
 	public void updateStatusById(int id, int sid);
 }

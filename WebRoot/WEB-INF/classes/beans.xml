@@ -50,7 +50,7 @@
 			Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
 	 -->
 	 <context:annotation-config />
-	 <context:component-scan base-package="cn.it.shop.."/>
+	 <context:component-scan base-package="cn.it.shop.*"/>
 	 
 	 <!-- 所有的properties文件应该交给Spring管理，而且在启动的时候加载
 	 	Spring支持两种方式，property-placeholder仅仅在xml中使用，即在beans.xml中获取properties文件中的对应的value --> 

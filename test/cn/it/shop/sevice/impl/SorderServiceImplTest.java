@@ -2,8 +2,6 @@ package cn.it.shop.sevice.impl;
 
 import javax.annotation.Resource;
 
-import net.sf.json.JSONSerializer;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -20,7 +18,7 @@ public class SorderServiceImplTest {
 
 	@Test
 	public void queryJoinCategory() {
-		System.out.println(JSONSerializer.toJSON(sorderService.querySale(5)));
+//		System.out.println(JSONSerializer.toJSON(sorderService.querySale(5)));
 		for(Object temp : sorderService.querySale(5)) {
 			System.out.println(temp);
 		}

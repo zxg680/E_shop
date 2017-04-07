@@ -5,6 +5,6 @@ import java.math.BigDecimal;
 import cn.it.shop.model.Forder;
 
 public interface ForderDao extends BaseDao<Forder> {
-	//¸ù¾İ¶©µ¥±àºÅ£¬¸üĞÂ¶©µ¥×´Ì¬
+	//æ ¹æ®è®¢å•ç¼–å·ï¼Œæ›´æ–°è®¢å•çŠ¶æ€
 	public void updateStatusById(int id, int sid);
 }

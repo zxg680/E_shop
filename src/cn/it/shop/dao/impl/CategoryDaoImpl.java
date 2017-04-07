@@ -8,7 +8,7 @@ import cn.it.shop.dao.CategoryDao;
 import cn.it.shop.model.Category;
 
 /**
- * @Description TODO£¨Ä£¿é×ÔÉíµÄÒµÎñÂß¼­£©
+ * @Description TODOï¼ˆæ¨¡å—è‡ªèº«çš„ä¸šåŠ¡é€»è¾‘ï¼‰
  * @author Ni Shengwu
  *
  */
@@ -21,8 +21,8 @@ public class CategoryDaoImpl extends BaseDaoImpl<Category> implements CategoryDa
 		String hql = "from Category c left join fetch c.account where c.type like :type";
 		return getSession().createQuery(hql)
 				.setString("type", "%" + type + "%")
-				.setFirstResult((page-1) * size) //´ÓµÚ¼¸¸ö¿ªÊ¼ÏÔÊ¾
-				.setMaxResults(size) //ÏÔÊ¾¼¸¸ö
+				.setFirstResult((page-1) * size) //ä»ç¬¬å‡ ä¸ªå¼€å§‹æ˜¾ç¤º
+				.setMaxResults(size) //æ˜¾ç¤ºå‡ ä¸ª
 				.list();
 	}
 
@@ -31,7 +31,7 @@ public class CategoryDaoImpl extends BaseDaoImpl<Category> implements CategoryDa
 		String hql = "select count(c) from Category c where c.type like :type";
 		return (Long) getSession().createQuery(hql)
 			.setString("type", "%" + type + "%")
-			.uniqueResult(); //·µ»ØÒ»Ìõ¼ÇÂ¼:×Ü¼ÇÂ¼Êı
+			.uniqueResult(); //è¿”å›ä¸€æ¡è®°å½•:æ€»è®°å½•æ•°
 	}
 
 	@Override
